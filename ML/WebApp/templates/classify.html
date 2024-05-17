@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='class.css') }}">
+    <head>
+        
+        <title>Duc dep trai web flask</title>
+        
+    </head>
+
+    <body>
+        
+        <h1 class="text-center">film type prediction</h1>
+
+        <form class="formclass" action="{{ url_for('predict') }}", method="post" >
+            <label>Your film title</label>
+            <input class="form-control1" placeholder="enter your title" type="text" name="class1" >
+            <label>Your film theme</label>
+            <input class="form-control2" placeholder="enter your theme" type="text" name="class2" >
+            <label>Your film score</label>
+            <input class="form-control3" placeholder="enter your score" type="text" name="class3" >
+            <label>Your film duration</label>
+            <input class="form-control3" placeholder="enter Duration" type="text" name="class4" >
+            <label>Your film status</label>
+            <input class="form-control3" placeholder="enter Status" type="text" name="class5" >
+            <label>Your film premiered</label>
+            <input class="form-control3" placeholder="enter Premiered" type="text" name="class6" >
+
+            <input class="predictbtn"type="submit" value="Predict Genre" >
+            
+        </form>
+
+        <br>
+        <br>
+        <form  action={{ url_for('regression') }}>
+            <input class="predictscore" type="submit" value="Predict your score"/>
+        </form>
+        <h4 class="filmtype"> film type is {{prediction}}</h4>
+        <form action={{ url_for('index') }}>
+            <input class="gohome" type="submit" value="Home"/>
+        </form>
+        
+        
+        
+    </body>
+</html>

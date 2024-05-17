@@ -1,0 +1,92 @@
+html{
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+body
+{
+    margin-top: 150px;
+    margin-bottom: 300px;
+    margin-right: 10px;
+    margin-left: 350px;
+    padding-top: 100px;
+    padding-right: 300px;
+    padding-bottom: 200px;
+    padding-left: 300px;
+    
+    height: 600px;
+    width: 300px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 8px 8px -4px rgb(108, 170, 190);
+    /* border: 2px solid #F6D8C6; */
+}
+
+h1{
+    padding-top: 10px;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0; 
+    box-sizing: border-box;
+  }
+.predictbtn
+{
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left: 520px;
+  top: 787px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.predictscore
+{
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 787px;
+  left: 700px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.gohome
+{
+    background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 787px;
+  right: 485px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.filmtype{
+  font-size: 40px;
+  position: absolute;
+  top: 860px;
+
+}

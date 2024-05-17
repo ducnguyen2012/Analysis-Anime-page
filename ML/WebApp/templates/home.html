@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
+    <head>
+        
+        <title>Duc dep trai web flask</title>
+        
+    </head>
+
+    <body>
+        
+        <h1>Welcome to my anime website</h1>
+            
+        
+        <form action={{ url_for('predict') }}>
+            <input class="gohome" type="submit" value="Predict your film type (action or else)"/>
+        </form>
+        <form  action={{ url_for('regression') }}>
+            <input class="predictscore" type="submit" value="Predict your film score"/>
+        </form>
+        
+    </body>
+</html>

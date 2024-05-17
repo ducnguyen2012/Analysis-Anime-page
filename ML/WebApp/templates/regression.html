@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <link rel="stylesheet" href={{url_for('static',filename='rank.css')}}
+    </head>
+
+    <body>
+        <h1 class="text-center">Rank Prediction</h1>
+
+
+        <form class="p-3 text-center" action="{{ url_for('regression') }}", method="post" >
+            <label>Enter Theme (Boi canh cua film) of your film</label>
+            <input class="form-control" placeholder="enter Theme" type="text" name="mytext_regression1" >
+            <label>Enter Genre (the loai cua phim) of your film</label>
+            <input class="form-control" placeholder="enter Genre" type="text" name="mytext_regression2" >
+            <label>Enter film name</label>
+            <input class="form-control" placeholder="enter film name" type="text" name="mytext_regression3" >
+            <input class="btn"type="submit" value="Predict film" >
+            
+        </form>
+        <br>
+        <br>
+        
+        <h4 class="filmtype"> Your film score maybe is {{prediction}}</h4>
+        
+        <form  action={{ url_for('index') }}>
+            <input class="comehome" type="submit" value="go home"/>
+        </form>
+        <form action={{ url_for('predict') }}>
+            <input class="classi" type="submit" value="classification genre"/>
+        </form>
+    </body>
+</html>
